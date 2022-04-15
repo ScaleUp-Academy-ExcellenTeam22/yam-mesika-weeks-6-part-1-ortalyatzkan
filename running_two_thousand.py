@@ -18,4 +18,4 @@ def timer(f,*args,**kwargs)->time:
 if __name__ == '__main__':
     print(timer(print, "Hello"))
     print(timer(zip, [1, 2, 3], [4, 5, 6]))
-    timer("Hi {name}".format, name="Bug")
+    print(timer("Hi {name}".format, name="Bug"))
