@@ -1,6 +1,6 @@
 def my_filter(function, iterable):
     """
-    A Function that receives iterable and  function.
+    A Function that gets iterable and  function.
     The function returns a new iterable,
     that contains all the values in iterable for which the function it received returns a value equal to true.
     :param function:A function that works on the iterable values or None.
