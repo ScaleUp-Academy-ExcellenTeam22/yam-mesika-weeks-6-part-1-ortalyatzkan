@@ -15,7 +15,7 @@ def my_filter(function: callable, iterable: Iterable) -> Generator[any, None, No
 
 if __name__ == '__main__':
     numbers = [1, -3, 10, 20, -10, 56, 84, -30]
-    mature_ages = my_filter(lambda number:number > 0, numbers)
+    mature_ages = my_filter(lambda number: number > 0, numbers)
     print(tuple(mature_ages))
     mature_ages = my_filter(None, numbers)
     print(tuple(mature_ages))
