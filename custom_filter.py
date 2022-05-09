@@ -1,4 +1,7 @@
-def my_filter(function, iterable):
+from typing import Iterable, Generator
+
+
+def my_filter(function: callable, iterable: Iterable) -> Generator[any, None, None]:
     """
     A Function that gets iterable and  function.
     The function returns a new iterable,
