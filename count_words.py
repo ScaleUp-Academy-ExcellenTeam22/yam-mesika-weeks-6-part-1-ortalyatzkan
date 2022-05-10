@@ -1,10 +1,13 @@
-def count_word(text:str)->dict:
+import re
+
+
+def count_word(text: str) -> dict:
     """
     A function that gets text and returns the lengths of words in the text as a dictionary.
     :param text:Text for which the lengths of the words will be calculated.
     :return:Lengths of words in the text as a dictionary.
     """
-    return {word: len(word) for word in text.replace("\n"," ").replace("."," ").split(' ') if word != '' and word != '\n'}
+    return {word: len(word) for word in (re.sub(r"[.\n]", ' ', text)).split(' ')if word != '' and word != '\n'}
 
 
 if __name__ == '__main__':
